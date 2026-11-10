@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Stackly FitZone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div id="page-loader">
+    <div class="loader-content">
+        <div class="loader-logo">STACKLY FITZONE</div>
+        <div class="loader-bar"></div>
+        <p>Join Our Community...</p>
+    </div>
+</div>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="index.html" class="logo"><span class="logo-mark">🏋️</span> Stackly FitZone</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a class="login-link" href="login.html">Login</a>
+        </div>
+    </nav>
+</header>
+
+<main class="auth-section">
+    <div class="auth-card">
+        <h1>Create Your Account</h1>
+        <p class="auth-subtitle">Join Stackly FitZone and take the first step towards a healthier you.</p>
+
+        <div id="signupMessage" class="form-message"></div>
+
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="signupName">Full Name</label>
+                <input type="text" id="signupName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="signupEmail">Email Address</label>
+                <input type="email" id="signupEmail" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" placeholder="Create a password" minlength="6" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="terms" required>
+                    I agree to the Terms & Conditions and Privacy Policy.
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Account →</button>
+        </form>
+
+        <p class="auth-bottom">
+            Already have an account?
+            <a href="login.html">Sign In</a>
+        </p>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>© 2026 Stackly FitZone. All Rights Reserved.</p>
+            <p>Hyderabad, India | +91 1234567890</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

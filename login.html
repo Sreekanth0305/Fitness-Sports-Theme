@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Stackly FitZone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div id="page-loader">
+    <div class="loader-content">
+        <div class="loader-logo">STACKLY FITZONE</div>
+        <div class="loader-bar"></div>
+        <p>Welcome Back...</p>
+    </div>
+</div>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="index.html" class="logo"><span class="logo-mark">🏋️</span> Stackly FitZone</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a class="btn btn-primary" href="signup.html">Join Now</a>
+        </div>
+    </nav>
+</header>
+
+<main class="auth-section">
+    <div class="auth-card">
+        <h1>Welcome Back!</h1>
+        <p class="auth-subtitle">Log in to continue your fitness journey.</p>
+
+        <div id="loginMessage" class="form-message"></div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-options">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="rememberMe">
+                    Remember me
+                </label>
+                <a href="#" onclick="alert('Please contact support to reset your demo password.'); return false;">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign In →</button>
+        </form>
+
+        <p class="auth-bottom">
+            Don't have an account?
+            <a href="signup.html">Create Account</a>
+        </p>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>© 2026 Stackly FitZone. All Rights Reserved.</p>
+            <p>Hyderabad, India | +91 1234567890</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
